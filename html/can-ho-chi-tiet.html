@@ -200,6 +200,16 @@
     <script src="js/atgNav.slick.js"></script>
     <script>
         $(document).ready(function () {
+            $('.mnu-sp').on('click',function () {
+                if(!$(this).hasClass('active')) {
+                    $(this).addClass('active');
+                    $('.main-nav').slideDown();
+                } else {
+                    $(this).removeClass('active');
+                    $('.main-nav').slideUp();
+                }
+            });
+
             $('.scrollToContact').on('click',function () {
                 $('html,body').animate({
                     scrollTop: $("#contact").offset().top

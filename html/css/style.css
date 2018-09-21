@@ -360,6 +360,19 @@
     margin: 0;
     font-size: 10px; }
 
+@media (max-width: 1024px) {
+  .scrollbar-inner {
+    max-height: 266px; } }
+@media (max-width: 768px) {
+  .scrollbar-inner {
+    max-height: 266px; }
+
+  .img-effect, .info-real-estate {
+    width: 100%;
+    float: none; }
+
+  .scrollbar-inner {
+    max-height: 100% !important; } }
 @media (max-width: 767px) {
   #header .header-tel .tel {
     border-left: none; }
@@ -405,7 +418,43 @@
 
   .col-sm-3 {
     width: 50%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .tab-build ul {
+    display: none !important;
+    padding-left: 10px;
+    padding-top: 5px; }
+
+  .contact .info-contact, .contact .form-contact {
+    width: 100%;
+    float: none; }
+
+  .contact {
+    background-size: cover; }
+
+  .contact .form-contact {
+    margin-top: 15px; }
+
+  .contact .body-info {
+    height: auto; }
+
+  .contact .form-body .title-form {
+    font-size: 16px; }
+
+  .contact .body-info .text-tel {
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center; }
+
+  .contact .body-info .contact-tel {
+    padding: 8px 0; }
+
+  .footer p {
+    text-align: center;
+    float: none; }
+
+  .menu-footer {
+    display: none; } }
 @media (max-width: 414px) {
   .col-sm-3 {
     width: 100%;
