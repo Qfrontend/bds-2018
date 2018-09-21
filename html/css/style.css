@@ -288,6 +288,10 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%; }
+.info-real-estate .tel-contact {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #1668b2; }
 
 .tab-build {
   background: #e9e8e8;
