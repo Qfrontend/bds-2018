@@ -155,7 +155,8 @@
 .banner .slick-prev,
 .banner .slick-next {
   display: none !important;}
-
+.banner.slick-dotted.slick-slider {
+  margin-bottom: 0;}
 /* Breadcrumb */
 .home .breadcrumb {
   display: none;}
