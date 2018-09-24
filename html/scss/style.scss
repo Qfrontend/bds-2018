@@ -152,6 +152,9 @@
   border-top: 1px solid #1668b2;
   border-bottom: 5px solid #63b1f7;
 }
+.banner .slick-prev,
+.banner .slick-next {
+  display: none !important;}
 
 /* Breadcrumb */
 .home .breadcrumb {
@@ -393,11 +396,6 @@ $lines-to-show: 2;
     margin: 0;
     font-size: 10px;}
 }
-@media (max-width: 1024px) {
-  .scrollbar-inner {
-    max-height: 266px;
-  }
-}
 @media (max-width: 768px) {
   .scrollbar-inner {
     max-height: 266px;
@@ -459,6 +457,18 @@ $lines-to-show: 2;
       }
     }
   }
+  .banner {
+    height: 120px;
+    overflow: hidden;}
+  .banner img {
+    max-width: 190%;
+    height: 120px;
+  }
+  #jssor_1 {
+    height: 150px !important;}
+  #jssor_1 div {
+    height: 150px !important;
+    width: 100% !important;}
   .main {
     padding-top: 15px;}
   .col-sm-3 {
@@ -514,6 +524,18 @@ $lines-to-show: 2;
 
 /*************** SCROLLBAR BASE CSS ***************/
 .scrollbar-inner {max-height: 345px}
+@media (max-width: 1024px) {
+  .scrollbar-inner {
+    max-height: 266px;
+  }
+  .banner {
+    height: 160px;
+    overflow: hidden;}
+  .banner img {
+    max-width: 190%;
+    height: 160px;
+  }
+}
 .scroll-wrapper {
   overflow: hidden !important;
   padding: 0 !important;
@@ -653,3 +675,36 @@ $lines-to-show: 2;
 
 .scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
 .scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+
+
+/* jssor slider loading skin spin css */
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.jssorb053 .i {position:absolute;cursor:pointer;}
+.jssorb053 .i .b {fill:#fff;fill-opacity:0.5;}
+.jssorb053 .i:hover .b {fill-opacity:.7;}
+.jssorb053 .iav .b {fill-opacity: 1;}
+.jssorb053 .i.idn {opacity:.3;}
+
+.jssora093 {display:block;position:absolute;cursor:pointer;}
+.jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093:hover {opacity:.8;}
+.jssora093.jssora093dn {opacity:.6;}
+.jssora093.jssora093ds {opacity:.3;pointer-events:none;}

@@ -9,3 +9,14 @@ $('.img-effect ul').slick({
     cssEase: 'linear',
     mobileFirst:true,
 });
+
+$('.banner').slick({
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    speed: 1000,
+    centerMode: false,
+    fade: true,
+    cssEase: 'linear',
+    mobileFirst:true,
+});
