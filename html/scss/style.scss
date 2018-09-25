@@ -536,6 +536,11 @@ $lines-to-show: 2;
   .menu-footer {
     display: none;}
 }
+.scrollbar-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 @media (max-width: 414px) {
   .col-sm-3 {
     width: 100%;
